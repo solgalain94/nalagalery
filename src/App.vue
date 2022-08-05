@@ -1,20 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HeaderComponent></HeaderComponent>
+  <GaleriaComponent></GaleriaComponent>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import GaleriaComponent from './components/GaleriaComponent.vue'
+import HeaderComponent from './components/HeaderComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    GaleriaComponent,
+    HeaderComponent
+}
 }
 </script>
 
 <style>
+@import "./assets/css/styles.css";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
